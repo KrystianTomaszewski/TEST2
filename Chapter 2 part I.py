@@ -1,8 +1,9 @@
-x = [xmuf, znkhaes, pggrlp, zia, znkhaes, znkhaes]
+with open('C:/Users/Krystian/PycharmProjects/TEST2/skyphrases') as f:
+    data = [x.split() for x in f]
 
-
-for elem in x:
-    if len(x) == len(set(x)):
-        print ("ok!")
-    else:
-        print("Duplikaty")
+print(data)
+x = 0
+for elem in data:
+    if len(elem) == len(set(elem)):
+        x += 1
+print(x)
