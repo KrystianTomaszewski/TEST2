@@ -1,4 +1,4 @@
-with open('C:/Users/Krystian/PycharmProjects/TEST2/skyphrases') as f:
+with open('skyphrases') as f:
     data = [x.split() for x in f]
 
 print(data)
